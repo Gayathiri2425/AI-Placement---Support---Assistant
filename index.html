@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Placement Support Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for premium typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i data-feather="briefcase"></i>
+                    <span>PlacementAI</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <button class="nav-item active" data-section="interview-prep">
+                    <i data-feather="users"></i>
+                    <span>Interview Prep</span>
+                </button>
+                <button class="nav-item" data-section="resume-help">
+                    <i data-feather="file-text"></i>
+                    <span>Resume Help</span>
+                </button>
+                <button class="nav-item" data-section="company-prep">
+                    <i data-feather="award"></i>
+                    <span>Company Prep</span>
+                </button>
+                <button class="nav-item" data-section="coding-practice">
+                    <i data-feather="code"></i>
+                    <span>Coding Practice</span>
+                </button>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <div class="avatar">S</div>
+                    <div class="user-info">
+                        <span class="user-name">Student</span>
+                        <span class="user-status">Online</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Panel -->
+        <main class="chat-panel">
+            <header class="chat-header">
+                <div class="header-info">
+                    <h1 id="current-section-title">Interview Prep</h1>
+                    <p id="current-section-desc">Virtual mentor for your placement journey.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn" title="Clear Chat"><i data-feather="trash-2"></i></button>
+                    <button class="icon-btn" title="Settings"><i data-feather="settings"></i></button>
+                </div>
+            </header>
+
+            <div class="chat-messages" id="chat-messages">
+                <!-- Welcome Message -->
+                <div class="message mentor">
+                    <div class="message-content">
+                        <p>Hello! I am your <strong>AI Placement Mentor</strong>. I can help you with:</p>
+                        <ul>
+                            <li>Technical Concepts (Python, ML)</li>
+                            <li>HR Questions & Resume Tips</li>
+                            <li>Company Specific Preparation</li>
+                            <li>Coding Logic</li>
+                        </ul>
+                        <p>What would you like to discuss today?</p>
+                    </div>
+                    <span class="message-time">12:20 PM</span>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="chat-input-wrapper">
+                    <textarea id="user-input" placeholder="Type your query here..." rows="1"></textarea>
+                    <button id="send-btn" class="send-btn">
+                        <i data-feather="send"></i>
+                    </button>
+                </div>
+                <p class="input-hint">Answers are strictly based on the Placement Knowledge Base.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
+</body>
+</html>

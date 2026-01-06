@@ -1,0 +1,28 @@
+[INTERVIEW_PYTHON]
+Python: High-level, interpreted, easy-to-read programming language.
+List: Ordered, mutable collection in Python.
+
+[INTERVIEW_ML]
+Machine Learning: Systems learn from data without explicit programming.
+Overfitting: Model performs well on training data but poorly on new data.
+
+[HR]
+Tell me about yourself: Education, skills, projects, career goal.
+Strengths: Skills relevant to the job role.
+
+[RESUME]
+Summary: Short, role-focused overview.
+Skills: List only confident skills.
+Projects: Problem, tools, impact.
+
+[COMPANY_TCS]
+Focus: Aptitude, basic coding, communication.
+Pattern: Written → Technical → HR.
+
+[COMPANY_INFOSYS]
+Focus: OOPS, DBMS, problem solving.
+Pattern: Online → Technical → HR.
+
+[CODING_PYTHON]
+Prime number: Check divisibility up to sqrt(n).
+Reverse string: Use slicing or loop.
